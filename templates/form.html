@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block titler %}
+<h1>Story Form</h1>
+{% endblock %}
+
+{% block form %}
+<form action="/story" methods="POST">
+    <label for="place-q">place:</label>
+    <input type="text" id="place" name="place">
+    <br>
+    <label for="noun-q">noun:</label>
+    <input type="text" id="noun" name="noun">
+    <br>
+    <label for="verb-q">verb:</label>
+    <input type="text" id="verb" name="verb">
+    <br>
+    <label for="adj-q">adjective:</label>
+    <input type="text" id="adjective" name="adjective">
+    <br>
+    <label for="plur-q">plural-noun:</label>
+    <input type="text" id="plural_noun" name="plural_noun">
+    <br>
+    <select name="stories" id="stories">
+        <option value="story1">Of the Deep</option>
+        <option value="story2">Of the Sand</option>
+        <option value="story3">Of the Sky</option>
+    </select>
+    <button>Submit!</button>
+</form>
+{% endblock %}
